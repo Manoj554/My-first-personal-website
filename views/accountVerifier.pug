@@ -1,0 +1,27 @@
+doctype html 
+html 
+    head 
+        title #{title}
+        link(rel="stylesheet", href="./stylesheets/formstyle.css")
+
+    body 
+        .box 
+          .header 
+             h2 #{header}
+          .content 
+            form(action='/verifyingAccount' method='post')
+              table
+                tbody
+                  tr 
+                    td
+                      lable(for='phone') Account No:-
+                    td
+                      input(type="phone" name='phone')
+              br
+              button.btn(type='submit') Verify
+              if(msg=='Account Number not Matched')
+                button.btn.home 
+                 a(href="/") Back to Home 
+          .footer 
+            h2 #{msg}
+          

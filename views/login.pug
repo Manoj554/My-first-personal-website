@@ -1,0 +1,28 @@
+doctype html 
+html 
+    head 
+        title #{title}
+        link(rel="stylesheet", href="./stylesheets/formstyle.css")
+
+    body 
+        .box 
+          .header 
+             h2 #{header}
+          .content 
+            form(action='/login' method='post')
+              table
+                tbody
+                  tr 
+                    td
+                      lable(for='password') Password:-
+                    td
+                      input(type="password" name='password')
+              br
+              button.btn(type='submit') login
+              button.btn.home 
+                a(href="/") Back to Home 
+              if(msg=='Password not matched')
+                a.forget(href="/changepassword") Forget Password!!! 
+          .footer 
+            h2 #{msg}
+          

@@ -1,0 +1,44 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background: url('../images/bg-1.jpg');
+}
+.ui.table{
+    background-color: #17f0f0cf;
+}
+.ui.table thead th{
+    background-color: #e6ff13;
+}
+.ui.table tfoot th{
+    background-color: #4f0cd3;
+}
+.button{
+    position: absolute;
+    top: 71px;
+    left: 46%;
+    padding: 7px 22px;
+    margin: 2px 2px;
+    border-radius: 10px;
+    background-color: #ff1d1d;
+    font-size: 21px;
+}
+.button a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.button a:hover{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    opacity: 0.8;
+}
+#msg{
+    background: url('../images/water-747618_1920.jpg');
+}
+#msg h1{
+    margin: 20px;
+    margin-bottom: 100px;
+    color: azure;
+}

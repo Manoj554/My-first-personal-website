@@ -1,0 +1,54 @@
+doctype html 
+html 
+  head 
+    title #{title}
+    link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/semantic-ui@2.3.3/dist/semantic.min.css')
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css")
+    link(rel="stylesheet", href="./stylesheets/messagestyle.css")
+  
+  body
+   .button 
+     a(href="/logout")  Logout
+   #msg 
+    h1.ui.center.aligned.header #{title} 
+    .ui.container
+      table.ui.celled.table.center.aligned
+        thead
+          tr
+            th Name
+            th Email
+            th Phone
+            th Subject
+            th Meassage 
+            th Reply
+        tbody
+           if(msg.length==0)
+              tr
+                td(colspan='6') 
+                  h2 No Message yet
+           if(msg.length>0)
+              each data in msg
+                tr 
+                  td #{data.Name}
+                  td #{data.Email}
+                  td #{data.PhoneNo}
+                  td #{data.Subject}
+                  td #{data.Massage}
+                  td
+                    a.btn.btn-primary.btn-sm(href=`mailto:${data.Email}` target='_blank') 
+                      span.glyphicon.glyphicon-share
+                    br
+                    a.btn.btn-success.btn-sm(href=`https://wa.me/${data.PhoneNo}` target='_blank')
+                      span.glyphicon.glyphicon-send
+                    br
+                    a.btn.btn-danger.btn-sm(href=`/mymessages/delete/${data._id}`)
+                      i.glyphicon.glyphicon-trash
+        
+                       
+
+        tfoot
+          tr
+            th(colspan='6')
+    
+
+    

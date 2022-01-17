@@ -1,0 +1,253 @@
+extends base.pug
+block style 
+  link(rel="stylesheet", href="./stylesheets/homestyle.css")
+  link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+  link(rel="preconnect" href="https://fonts.gstatic.com")
+  link(href="https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Mate+SC&family=Nunito+Sans&display=swap" rel="stylesheet")
+
+block content
+  #home
+    .intro
+      h1
+        .typewrite(data-period="2000"
+            data-type='[ "Hello I am Manoj Kumar Mondal", "Full Stack & Mern Developer", "Welcome to My Website"]')
+          span.wrap
+      h3
+        a(href="mailto:manojmark554@gmail.com") manojmark554@gmail.com 
+    .social 
+      a(href="https://www.linkedin.com/in/manoj-kumar-mondal-3a189b19a/" target="_blank") 
+        i.fa.fa-linkedin(aria-hidden="true")
+      a(href="https://twitter.com/MKM_554" target="_blank") 
+        i.fa.fa-twitter(aria-hidden="true")
+      a(href="https://github.com/Manoj554" target="_blank") 
+        i.fa.fa-github(aria-hidden="true")
+  #about
+    .box_about
+      .text 
+        h1 ABOUT ME
+      button(onclick='log()')
+      img(src="./images/mypic.png", alt='fdgvfdhgvfdgbv')
+      .text_about 
+        h2 Hello There, 
+        p I am an undergraduate student at IIIT Bhubaneswar in Electrical and Electronics Engineering. I am a MERN stack developer. I also work in the IoT domain and also passionate about exploring different electrical and electronics projects. Recently I have completed a conference paper title ONLINE-BASED SMART ENERGY METER which is going to publish by Springer-LNEE.
+
+  .parallax
+      h1 "The problem is with everyone, it's just a matter of perspective"
+      h3  - Life Philosophy-
+
+  #skills 
+    .text_skill
+      h3 SKILLS
+      h1 Technical Expertise
+      h4 Always ready to try hands-on new and emerging technologies
+    .skill_box 
+      .skill
+        p HTML
+        .skill_indicator 
+          .skills.html 90%
+      .skill
+        p CSS
+        .skill_indicator 
+          .skills.css 80%
+      .skill
+        p JAVA SCRIPT
+        .skill_indicator 
+          .skills.js 85%
+      .skill
+        p NodeJS
+        .skill_indicator 
+          .skills.nodejs 75%
+      .skill
+        p EXPRESS
+        .skill_indicator 
+          .skills.express 80%
+      .skill
+        p C++
+        .skill_indicator 
+          .skills.cpp 70%
+      .skill
+        p MongoDB
+        .skill_indicator 
+          .skills.mongo 80%
+      .skill
+        p ReactJS
+        .skill_indicator 
+          .skills.react 75%
+
+  #experience 
+    .text_skill
+      h3 TIMELINE
+      h1 My journey so far
+      h4 All my academic and professional experience are summed up here
+
+    .timeline 
+      .box.left 
+        .content 
+          h2 Internship at OPTCL Bhubaneswar 
+          h3 June - July 2021
+          p I Have completed my Summer-Training program at OPTCL Chandaka.
+      .box.right 
+        .content 
+          h2 Conference paper
+          h3 December 2020 - May 2021
+          p I have completed a conference paper named ONLINE-BASED SMART ENERGY METER, It is going to published by Springer-LNEE in January 2022.
+      .box.left 
+        .content 
+          h2 Web Development Course 
+          h3 2020
+          p In this pandemic year I have learned about the technology used in Developing the Web Application.Now I am a Full Stack Developer.
+      .box.right 
+        .content 
+          h2 Summer Traning at OHPC 
+          h3 May - June 2019
+          p This is my first Training and I have completed it at Upper-Kolab, Odisha, India. In internship, I gained lots of practical knowledge about power generation to the transmission system.
+      .box.left 
+        .content 
+          h2 Joined IIIT-BBSR
+          h3 2018
+          p My journey started here exploring.......
+
+  #projects 
+    .text_skill 
+      h3 ACCOMPLISHMENTS
+      h1 Project Showcase
+      h4 Here are some of my personal projects.
+      .show_projects 
+        a(href="https://github.com/Manoj554?tab=repositories" target='_blank') 
+          h3 VIEW ALL PROJECTS
+    
+    
+    .projects
+      .card 
+        img(src="./images/mysecondwebsite.png", alt="My Portfolio" style="width:100%")
+        .description 
+          h4 My-New-Portfolio
+          p
+           span This is my new Portfolio website made using NextJs.
+          
+           a(href="https://manojkumarmondal.vercel.app" target='_blank') &nbsp visit here
+      .card 
+        img(src="./images/webdockep.png", alt="WebDocumentKeeperApp" style="width:100%")
+        .description 
+          h4 Web-Document-Keeper
+          p
+           span cloud based document keeper and can access at anytime from anywhere
+          
+           a(href="https://webdocumentkeeper.netlify.app" target='_blank') &nbsp visit here
+      .card 
+        img(src="./images/mern.png", alt="Mern SS" style="width:100%")
+        .description 
+          h4 Mern Application online store
+          p
+           a(href="https://demofashion.netlify.app/" target='_blank' style='margin-right:8px;') Client side
+          
+           a(href="https://demofashion.herokuapp.com/" target='_blank') Server side
+      .card 
+        img(src="./images/jstutorial.jpg", alt="Js Tutorial SS" style="width:100%")
+        .description 
+          h4 Complete JavaScript Tutorial Website
+          p
+           a(href="https://learnjavascripts.000webhostapp.com/" target='_blank') Click here to explore 
+      .card 
+        img(src="./images/onlinemeal.jpg", alt="OnlineMeal Img" style="width:100%")
+        .description 
+          h4 Website for Online Food Order 
+          a(href="https://mywebmeals.000webhostapp.com/" target="_blank") Click here to visit 
+      .card 
+        img(src="./images/paper.jpg", alt="conferenece paper ss" style="width:100%")
+        .description 
+          h4 Conference paper
+          a(href="javascript:void(0)", target="_blank") Online-Based Smart Energy Meter
+      .card 
+        img(src="./images/obsem.jpg", alt="paper img" style="width:100%")
+        .description 
+          h4 Website for the above mentioned paper 
+          a(href="https://sm-electricals.herokuapp.com/", target="_blank") click here to see 
+      .card 
+        img(src="./images/faculty-profile-app.png", alt="faculty-profile-image" style="width:100%")
+        .description 
+          h4 Faculty Profile WebApp (using html and css)
+          a(href="https://faculty-profile-iiit-bh.netlify.app", target="_blank") click here to see 
+
+
+  #contacts
+    .text_skill
+      h3 CONTACT
+      h1 Let's Connect
+
+    .skill_box 
+      .column
+        h1(style='color:yellow') &nbspReach out to me!
+        h3(style='text-align:left') Feel free to reach me if you have any question
+        .contact_box 
+          h2 Have a Question?
+          ul 
+            li 
+              i.fa.fa-phone.fa-xs
+              |&nbsp +91 8144607288
+            li
+              i.fa.fa-envelope.fa-sm
+              |&nbsp b318029@iiit-bh.ac.in 
+            li
+              i.fa.fa-map-marker.fa-sm
+              .addressbox
+                |P-block(New-Hostel), IIIT Bhubaneswar, Gothapatna, 751003, Odisha, India
+        .social_media
+          ul 
+            li 
+              a(href="https://www.facebook.com/manojkumar.mondal.102", target="_blank") 
+                i.fa.fa-facebook(aria-hidden="true")
+            li 
+              a(href="https://twitter.com/MKM_554", target="_blank") 
+                i.fa.fa-twitter(aria-hidden="true")
+            li 
+              a(href="https://www.linkedin.com/in/manoj-kumar-mondal-3a189b19a/", target="_blank") 
+                i.fa.fa-linkedin(aria-hidden="true")
+            li 
+              a(href="https://www.instagram.com/manoj_kumar_mondal/", target="_blank") 
+                i.fa.fa-instagram(aria-hidden="true")
+
+      .column#sendmessage 
+        h2(style='color:yellow') Send Message
+        if(err && err!=10)
+          p(style="color:red") &nbsp #{msg}
+        if(err.email)
+          p(style="color:red") &nbsp #{err.email.msg},
+        if(err.phone)
+          p(style="color:red") &nbsp #{err.phone.msg}
+        if(err==10)
+          p(style="color:green") #{msg}
+        form(action="/" method='post')
+          input(type="text", name="name" placeholder='Enter your Name') 
+          if(err.email)
+           input(type="email", name="email" placeholder=`${err.email.msg}`)
+          else 
+           input(type="email", name="email" placeholder='Enter your Email id')
+          br
+          if(err.phone)
+           input(type="tel" name='phone' placeholder=`${err.phone.msg}`)
+          else
+           input(type="tel" name='phone' placeholder='Enter your Phone Number')
+          input(type="text" name='subject' placeholder='Enter Subject')
+          br
+          textarea(name="massage", cols="30", rows="10" placeholder='Write your Message here') 
+          br
+          button.btn(type='submit') Submit
+
+
+  #footer 
+    
+
+block scripts
+  script.
+      let date=new Date();
+      let year=date.getFullYear();
+      document.getElementById('footer').innerHTML='<h4>Copyright &copy '+year+' All Rights Reserved By Manoj</h4>';
+
+
+  
+              
+    
+        
+    
+      

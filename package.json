@@ -1,0 +1,26 @@
+{
+  "name": "personal-website",
+  "version": "1.0.0",
+  "description": "this is my personal website where you can get information about me",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "manoj",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "dotenv": "^12.0.3",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "express-validator": "^6.11.1",
+    "js-alert": "^1.0.4",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.11",
+    "node-localstorage": "^2.1.6",
+    "nodemailer": "^6.6.1",
+    "pug": "^3.0.2"
+  }
+}
